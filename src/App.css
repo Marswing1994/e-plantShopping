@@ -30,20 +30,24 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
- top: 100px;
+  max-width: 100vw;
   backdrop-filter: blur(4px);
   background-color: rgba(0,0,0,0.5);
   gap: 20px;
 }
 
+.aboutus_container {
+  flex: 1;
+  min-width: 0;
+  max-width: 1000px;
+}
+
 .landing_content {
- margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
   /* background-color: red; */
   width: 400px;
+  flex-shrink: 0;
   height: 400px;
   display: flex;
   align-items: center;
